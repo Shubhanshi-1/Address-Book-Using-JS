@@ -22,12 +22,14 @@ try {
     console.log("Total Contacts:", addressBook.countContacts()); 
 
     const duplicateContact = new Contact(
-        "Shubahnshi", "Verma", "Bhopal", "India", "Madhya Pradesh", "462033", "9876559210", "helloworldrt@gmail.com"
+        "Shubhanshi", "Verma", "Bhopal", "India", "Madhya Pradesh", "462033", "9876559210", "helloworldrt@gmail.com"
     );
     console.log(addressBook.addContact(duplicateContact));  
 
     console.log("Contacts in India:");
     console.log(addressBook.searchByCityOrState("India"));
+    console.log("Viewing Persons by City or State:");
+    console.log(addressBook.viewPersonsByCityOrState());
 
 } catch (error) {
     console.error("Error:", error.message);
